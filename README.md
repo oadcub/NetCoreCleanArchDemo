@@ -1,0 +1,2 @@
+# NetCoreCleanArchDemo
+Clean arch structure
