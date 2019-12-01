@@ -18,5 +18,10 @@ namespace ChanaweeDemo.Infra.Data.Repository
         {
             return _context.Products;
         }
+        public void Add(Product product)
+        {
+            _context.Add(product);
+            _context.SaveChanges();
+        } 
     }
 }

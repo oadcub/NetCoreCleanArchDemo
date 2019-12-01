@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChanaweeDemo.Domain.Core\ChanaweeDemo.Domain.Core.csproj" />
+  </ItemGroup>
+
 </Project>

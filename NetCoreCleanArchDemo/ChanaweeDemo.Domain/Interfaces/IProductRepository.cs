@@ -8,5 +8,6 @@ namespace ChanaweeDemo.Domain.Interfaces
     public interface IProductRepository
     {
         IEnumerable<Product> GetProducts();
+        void Add(Product product);
     }
 }
