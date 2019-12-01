@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChanaweeDemo.Infra.Data\ChanaweeDemo.Infra.Data.csproj" />
+    <ProjectReference Include="..\ChanaweeDemo.Infra.IoC\ChanaweeDemo.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>

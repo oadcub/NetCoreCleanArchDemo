@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChanaweeDemo.Application\ChanaweeDemo.Application.csproj" />
+    <ProjectReference Include="..\ChanaweeDemo.Infra.Data\ChanaweeDemo.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>
