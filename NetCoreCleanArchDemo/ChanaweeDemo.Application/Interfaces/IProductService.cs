@@ -7,7 +7,7 @@ namespace ChanaweeDemo.Application.Interfaces
 {
     public interface IProductService
     {
-        ProductViewModel GetProducts();
+        IEnumerable<ProductViewModel> GetProducts();
         void Create(ProductViewModel productViewModel);
     }
 }

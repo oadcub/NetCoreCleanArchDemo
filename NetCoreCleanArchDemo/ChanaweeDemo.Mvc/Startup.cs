@@ -16,6 +16,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ChanaweeDemo.Infra.Data.Context;
 using ChanaweeDemo.Infra.IoC;
 using MediatR;
+using ChanaweeDemo.Mvc.Configurations;
 
 namespace ChanaweeDemo.Mvc
 {
@@ -52,6 +53,8 @@ namespace ChanaweeDemo.Mvc
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
 
             RegisterServices(services);
         }

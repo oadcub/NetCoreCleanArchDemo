@@ -3,6 +3,7 @@ using ChanaweeDemo.Domain.Models;
 using ChanaweeDemo.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ChanaweeDemo.Infra.Data.Repository
@@ -14,7 +15,7 @@ namespace ChanaweeDemo.Infra.Data.Repository
         {
             _context = context;
         }
-        public IEnumerable<Product> GetProducts()
+        public IQueryable<Product> GetProducts()
         {
             return _context.Products;
         }

@@ -9,6 +9,5 @@ namespace ChanaweeDemo.Application.ViewModels
     {
         public string Name { get; set; }
         public double Price { get; set; }
-        public IEnumerable<Product> Products { get; set; }
     }
 }

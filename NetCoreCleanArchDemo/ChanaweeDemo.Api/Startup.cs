@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ChanaweeDemo.Api.Configurations;
 using ChanaweeDemo.Infra.Data.Context;
 using ChanaweeDemo.Infra.IoC;
 using MediatR;
@@ -43,6 +44,8 @@ namespace ChanaweeDemo.Api
             });
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
 
             RegisterServices(services);
         }

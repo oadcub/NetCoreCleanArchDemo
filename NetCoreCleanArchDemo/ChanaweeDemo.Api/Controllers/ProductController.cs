@@ -21,8 +21,7 @@ namespace ChanaweeDemo.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var products = _productService.GetProducts();
-            return Ok(products.Products);
+            return Ok(_productService.GetProducts());
         }
         [HttpPost]
         public IActionResult Post([FromBody] ProductViewModel productViewModel)

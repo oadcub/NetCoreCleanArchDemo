@@ -1,13 +1,12 @@
-﻿@model ChanaweeDemo.Application.ViewModels.ProductViewModel
+﻿@model IEnumerable<ChanaweeDemo.Application.ViewModels.ProductViewModel>
 @{
     ViewData["Title"] = "Product list";
 }
 
 <div class="container body-content">
-    @foreach (var product in Model.Products)
+    @foreach (var product in Model)
     {
         <div class="row product-content">
-            <div class="col-sm-2">@product.Id</div>
             <div class="col-sm-5">@product.Name</div>
             <div class="col-sm-3">@product.Price</div>
         </div>
