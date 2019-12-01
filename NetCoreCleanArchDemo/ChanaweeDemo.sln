@@ -13,9 +13,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChanaweeDemo.Infra.IoC", "C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChanaweeDemo.UI.Mvc", "ChanaweeDemo.UI.Mvc", "{189138C5-4068-484C-B05D-084E7A6A643F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChanaweeDemo.Mvc", "ChanaweeDemo.UI.Mvc\ChanaweeDemo.Mvc\ChanaweeDemo.Mvc.csproj", "{5036A010-9F03-453E-8491-221C11C9F12F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5036A010-9F03-453E-8491-221C11C9F12F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5036A010-9F03-453E-8491-221C11C9F12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5036A010-9F03-453E-8491-221C11C9F12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5036A010-9F03-453E-8491-221C11C9F12F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5036A010-9F03-453E-8491-221C11C9F12F} = {189138C5-4068-484C-B05D-084E7A6A643F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46F3D664-2320-409D-AB8B-7C4843F97BD9}
