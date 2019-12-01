@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ChanaweeDemo.Domain.CommandHandlers
 {
-    class ProductCommandHandler : IRequestHandler<CreateProductCommand, bool>
+    public class ProductCommandHandler : IRequestHandler<CreateProductCommand, bool>
     {
         private readonly IProductRepository _productRepository;
         public ProductCommandHandler(IProductRepository productRepository)

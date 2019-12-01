@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChanaweeDemo.Application\ChanaweeDemo.Application.csproj" />
+    <ProjectReference Include="..\ChanaweeDemo.Infra.Bus\ChanaweeDemo.Infra.Bus.csproj" />
     <ProjectReference Include="..\ChanaweeDemo.Infra.Data\ChanaweeDemo.Infra.Data.csproj" />
   </ItemGroup>
 
