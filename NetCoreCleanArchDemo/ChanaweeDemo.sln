@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChanaweeDemo.Application", "ChanaweeDemo.Application", "{88F84087-9611-4FED-BC4A-423442D2B88A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChanaweeDemo.Domain", "ChanaweeDemo.Domain", "{23E1A0B9-CB64-48DA-A617-79E59E204F2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChanaweeDemo.Infra.Data", "ChanaweeDemo.Infra.Data", "{D39B5376-1ADB-44E9-9DB6-46E917FA7327}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChanaweeDemo.Infra.IoC", "ChanaweeDemo.Infra.IoC", "{996E6A61-0ED3-430B-AFBC-E9568F6FB8C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChanaweeDemo.UI.Mvc", "ChanaweeDemo.UI.Mvc", "{189138C5-4068-484C-B05D-084E7A6A643F}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46F3D664-2320-409D-AB8B-7C4843F97BD9}
+	EndGlobalSection
+EndGlobal
