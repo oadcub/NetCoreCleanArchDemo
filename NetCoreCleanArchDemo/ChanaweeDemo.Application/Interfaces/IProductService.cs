@@ -8,5 +8,6 @@ namespace ChanaweeDemo.Application.Interfaces
     public interface IProductService
     {
         ProductViewModel GetProducts();
+        void Create(ProductViewModel productViewModel);
     }
 }
