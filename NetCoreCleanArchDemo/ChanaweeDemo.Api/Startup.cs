@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ChanaweeDemo.Infra.Data.Context;
 using ChanaweeDemo.Infra.IoC;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace ChanaweeDemo.Api
 {
@@ -35,6 +37,13 @@ namespace ChanaweeDemo.Api
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Chanawee Demo Api", Version = "v1" });
+            });
+
+            services.AddMediatR(typeof(Startup));
+
             RegisterServices(services);
         }
 
@@ -52,6 +61,11 @@ namespace ChanaweeDemo.Api
             }
 
             app.UseHttpsRedirection();
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Chanawee Demo Api V1");
+            });
             app.UseMvc();
         }
         private static void RegisterServices(IServiceCollection services)

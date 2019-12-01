@@ -3,14 +3,16 @@ using ChanaweeDemo.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ChanaweeDemo.Infra.Data.Migrations
 {
     [DbContext(typeof(ChanaweeDemoDBContext))]
-    partial class ChanaweeDemoDBContextModelSnapshot : ModelSnapshot
+    [Migration("20191201195722_ChangeProductPriceDataType")]
+    partial class ChangeProductPriceDataType
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
