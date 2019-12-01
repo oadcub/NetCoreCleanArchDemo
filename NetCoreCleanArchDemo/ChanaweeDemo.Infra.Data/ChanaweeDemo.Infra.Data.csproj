@@ -14,4 +14,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChanaweeDemo.Domain\ChanaweeDemo.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using ChanaweeDemo.Mvc.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ChanaweeDemo.Infra.Data.Context;
 
 namespace ChanaweeDemo.Mvc
 {
@@ -40,6 +41,11 @@ namespace ChanaweeDemo.Mvc
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+            services.AddDbContext<ChanaweeDemoDBContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("ChanaweeDemoDBConnection")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
