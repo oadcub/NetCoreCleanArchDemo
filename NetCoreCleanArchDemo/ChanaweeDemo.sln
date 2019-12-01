@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChanaweeDemo.Application", "ChanaweeDemo.Application", "{88F84087-9611-4FED-BC4A-423442D2B88A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{88F84087-9611-4FED-BC4A-423442D2B88A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{23E1A0B9-CB64-48DA-A617-79E59E204F2B}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChanaweeDemo.Domain", "ChanaweeDemo.Domain\ChanaweeDemo.Domain.csproj", "{25D33F5C-3EDE-4244-B9A7-FE7E25FADA4F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChanaweeDemo.Infra.Data", "ChanaweeDemo.Infra.Data\ChanaweeDemo.Infra.Data.csproj", "{18A53CA9-F623-4474-9574-1B7AC671E349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChanaweeDemo.Application", "ChanaweeDemo.Application\ChanaweeDemo.Application.csproj", "{71A56F71-F821-4A8A-83B2-9363FFEE3151}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{18A53CA9-F623-4474-9574-1B7AC671E349}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18A53CA9-F623-4474-9574-1B7AC671E349}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18A53CA9-F623-4474-9574-1B7AC671E349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A56F71-F821-4A8A-83B2-9363FFEE3151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A56F71-F821-4A8A-83B2-9363FFEE3151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A56F71-F821-4A8A-83B2-9363FFEE3151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A56F71-F821-4A8A-83B2-9363FFEE3151}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{5036A010-9F03-453E-8491-221C11C9F12F} = {189138C5-4068-484C-B05D-084E7A6A643F}
 		{25D33F5C-3EDE-4244-B9A7-FE7E25FADA4F} = {23E1A0B9-CB64-48DA-A617-79E59E204F2B}
 		{18A53CA9-F623-4474-9574-1B7AC671E349} = {D39B5376-1ADB-44E9-9DB6-46E917FA7327}
+		{71A56F71-F821-4A8A-83B2-9363FFEE3151} = {88F84087-9611-4FED-BC4A-423442D2B88A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46F3D664-2320-409D-AB8B-7C4843F97BD9}
