@@ -25,13 +25,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChanaweeDemo.Infra.IoC", "C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Bus", "Infra.Bus", "{7B91E0E4-54F7-4842-BA58-79E3FEA601C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChanaweeDemo.Infra.Bus", "ChanaweeDemo.Infra.Bus\ChanaweeDemo.Infra.Bus.csproj", "{D414A23F-41AA-4556-913F-CD99EF8E3A83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChanaweeDemo.Infra.Bus", "ChanaweeDemo.Infra.Bus\ChanaweeDemo.Infra.Bus.csproj", "{D414A23F-41AA-4556-913F-CD99EF8E3A83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChanaweeDemo.Domain.Core", "ChanaweeDemo.Domain.Core\ChanaweeDemo.Domain.Core.csproj", "{2BDB4245-F40B-45B9-AF05-330FDF733D28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChanaweeDemo.Domain.Core", "ChanaweeDemo.Domain.Core\ChanaweeDemo.Domain.Core.csproj", "{2BDB4245-F40B-45B9-AF05-330FDF733D28}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{BCEDA4A8-0B11-4A78-BA0C-17D7D4300121}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChanaweeDemo.Api", "ChanaweeDemo.Api\ChanaweeDemo.Api.csproj", "{E1C129BE-3E3D-4A02-8B74-F3B81A7792D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChanaweeDemo.Api", "ChanaweeDemo.Api\ChanaweeDemo.Api.csproj", "{E1C129BE-3E3D-4A02-8B74-F3B81A7792D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{59D3A54E-0DA1-4656-B6DD-888E502A4983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject", "XUnitTestProject\XUnitTestProject.csproj", "{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +75,10 @@ Global
 		{E1C129BE-3E3D-4A02-8B74-F3B81A7792D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1C129BE-3E3D-4A02-8B74-F3B81A7792D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1C129BE-3E3D-4A02-8B74-F3B81A7792D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +92,7 @@ Global
 		{D414A23F-41AA-4556-913F-CD99EF8E3A83} = {7B91E0E4-54F7-4842-BA58-79E3FEA601C9}
 		{2BDB4245-F40B-45B9-AF05-330FDF733D28} = {23E1A0B9-CB64-48DA-A617-79E59E204F2B}
 		{E1C129BE-3E3D-4A02-8B74-F3B81A7792D2} = {BCEDA4A8-0B11-4A78-BA0C-17D7D4300121}
+		{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2} = {59D3A54E-0DA1-4656-B6DD-888E502A4983}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46F3D664-2320-409D-AB8B-7C4843F97BD9}
