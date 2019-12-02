@@ -1,5 +1,6 @@
 ﻿using ChanaweeDemo.Application.Interfaces;
 using ChanaweeDemo.Application.Services;
+using ChanaweeDemo.Application.Services.Discount;
 using ChanaweeDemo.Domain.CommandHandlers;
 using ChanaweeDemo.Domain.Commands;
 using ChanaweeDemo.Domain.Core.Bus;
@@ -27,6 +28,11 @@ namespace ChanaweeDemo.Infra.IoC
 
             //Application Layer
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IPurchaseService, PurchaseService>();
+            services.AddScoped<IDiscountRuleService, DiscountRule1>();
+            services.AddScoped<IDiscountRuleService, DiscountRule2>();
+            services.AddScoped<IDiscountRuleService, DiscountRule3>();
+            services.AddScoped<IDiscountRuleService, DiscountRule4>();
 
             //Infra.Data Layer
             services.AddScoped<IProductRepository, ProductRepository>();
