@@ -35,7 +35,7 @@ namespace ChanaweeDemo.Api
             services.AddDbContext<ChanaweeDemoDBContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("ChanaweeDemoDBConnection")));
-
+            services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddSwaggerGen(c =>
@@ -69,6 +69,11 @@ namespace ChanaweeDemo.Api
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Chanawee Demo Api V1");
             });
+            app.UseCors(builder => builder
+             .AllowAnyOrigin()
+             .AllowAnyMethod()
+             .AllowAnyHeader()
+             .AllowCredentials());
             app.UseMvc();
         }
         private static void RegisterServices(IServiceCollection services)

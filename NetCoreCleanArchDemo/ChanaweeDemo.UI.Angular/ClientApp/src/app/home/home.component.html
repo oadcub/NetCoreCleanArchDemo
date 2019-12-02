@@ -1,0 +1,38 @@
+<p>
+  1. Discount 10% when customer present coupon code "DIS10" or price is more/equal than 2000 baht<br />
+  2. Discount 30% when customer present coupon code "STARCARD" for 2 customers*<br />
+  3. Come 4 pay 3 when customer present coupon code "STARCARD"<br />
+  4. Discount 25% when price more/equal that 2500 baht.**<br />
+* ข้อ 2 ถ้ามามากกว่า 2คน จะลดราคาแค่ 2 คนเท่านั้น คนอื่นไม่ลด<br />
+** ข้อ 3 จะ คำนวนลดราคาไป 1 คน ทุกๆ 4คน ไม่ใช่เฉพาะ 4 คนแรก
+</p>
+<div class="row">
+  <div class="col-sm-4">numberOfCustomer:</div>
+  <div class="col-sm-8">
+    <input type="number" class="form-control" id="numberOfCustomer"
+           required
+           [(ngModel)]="purchaseViewModel.numberOfCustomer" />
+  </div>
+  <div class="col-sm-4">pricePerPerson:</div>
+  <div class="col-sm-8">
+    <input type="number" class="form-control" id="pricePerPerson"
+           required
+           [(ngModel)]="purchaseViewModel.pricePerPerson" />
+  </div>
+  <div class="col-sm-4">couponCode:</div>
+  <div class="col-sm-8">
+    <select class="form-control" id="couponCode"
+            [(ngModel)]="purchaseViewModel.couponCode">
+      <option value="NONE">NONE</option>
+      <option value="DIS10">DIS10</option>
+      <option value="STARCARD">STARCARD</option>
+    </select>
+  </div>
+
+  <div class="col-sm-4"><button (click)="calculate()">Calculate</button></div>
+  <div class="col-sm-8">
+    totalAmount: {{totalAmount}}
+  </div>
+</div>
+
+

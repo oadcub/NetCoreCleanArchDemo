@@ -37,6 +37,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{59D3A54E-0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject", "XUnitTestProject\XUnitTestProject.csproj", "{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChanaweeDemo.UI.Angular", "ChanaweeDemo.UI.Angular\ChanaweeDemo.UI.Angular.csproj", "{A1E4BFAB-FE9C-48A6-811A-DF48F980B57B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E4BFAB-FE9C-48A6-811A-DF48F980B57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E4BFAB-FE9C-48A6-811A-DF48F980B57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E4BFAB-FE9C-48A6-811A-DF48F980B57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E4BFAB-FE9C-48A6-811A-DF48F980B57B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +99,7 @@ Global
 		{2BDB4245-F40B-45B9-AF05-330FDF733D28} = {23E1A0B9-CB64-48DA-A617-79E59E204F2B}
 		{E1C129BE-3E3D-4A02-8B74-F3B81A7792D2} = {BCEDA4A8-0B11-4A78-BA0C-17D7D4300121}
 		{01A3F611-A3BA-4F2F-B7E7-F29AC8228AB2} = {59D3A54E-0DA1-4656-B6DD-888E502A4983}
+		{A1E4BFAB-FE9C-48A6-811A-DF48F980B57B} = {189138C5-4068-484C-B05D-084E7A6A643F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46F3D664-2320-409D-AB8B-7C4843F97BD9}
